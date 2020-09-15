@@ -34,7 +34,7 @@ $tweaks = @(
 	"InstallAdobe",
 	"Install7Zip",
 	"InstallNotepadplusplus",
-	"InstallMediaPlayerClassic",
+	"InstallMediaPlayerClassicBlackEdition",
 
 	### Windows Apps
 	"DebloatAll",
@@ -161,7 +161,7 @@ $tweaks = @(
 	"InstallMediaPlayer", 		# "UninstallMediaPlayer",
 	"UninstallInternetExplorer",  # "InstallInternetExplorer",
 	"UninstallWorkFolders",       # "InstallWorkFolders",
-	"InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
+	# "InstallLinuxSubsystem",      # "UninstallLinuxSubsystem",
 	# "InstallHyperV",              # "UninstallHyperV",
 	"SetPhotoViewerAssociation",    # "UnsetPhotoViewerAssociation",
 	"AddPhotoViewerOpenWith",       # "RemovePhotoViewerOpenWith",
@@ -221,9 +221,9 @@ Function InstallNotepadplusplus {
 	choco install notepadplusplus -y
 }
 
-Function InstallMediaPlayerClassic {
-	Write-Output "Installing Media Player Classic (VLC Alternative)"
-	choco install mpc-hc -y
+Function InstallMediaPlayerClassicBlackEdition {
+	Write-Output "Installing Media Player Classic Black Edition (VLC Alternative)"
+	choco install mpc-be -y
 }
 
 ##########
